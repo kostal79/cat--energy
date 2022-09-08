@@ -782,7 +782,7 @@ footer {
   }
   main .green-line {
     margin: 0 -70px;
-    width: 120%;
+    width: 114%;
     top: 71px;
   }
   main .green-line--comments {
@@ -837,7 +837,7 @@ footer {
     column-gap: 80px;
   }
   main .green-line {
-    margin: 0 -110px;
+    margin: 0 -90px;
   }
   main .contacts {
     display: grid;
