@@ -1,0 +1,108 @@
+.how-it-works {
+    padding-top: 27px;
+    padding-bottom: 42px;
+
+    &__heading {
+        font-size: 36px;
+    }
+
+    .blocks {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 38px;
+
+        .block {
+            .icon {
+                float:left;
+                margin-right: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                width: 60px;
+                height: 60px;
+                background-color: $color-basic-green;
+
+            }
+
+            &__text {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: $color-special-dark-grey;
+            }
+
+            &__number {
+                display: none;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .how-it-works {
+        padding-top: 45px;
+
+        .container {
+            padding: 0 30px;
+        }
+
+        .blocks {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 153px;
+            row-gap: 35px;
+            border-bottom: solid 1px #E6E6E6;
+            padding-bottom: 45px;
+
+
+            .block {
+                display: flex;
+                position: relative;
+                width: 230px;
+                height: 280px;
+                flex-direction: column;
+                gap: 30px;
+
+                .icon {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                &__number {
+                    display: block;
+                    position: absolute;
+                    top: -78px;
+                    right: 0;
+                    font-size: 280px;
+                    color: $color-basic-grey;
+                    z-index: -1;
+                }
+                &__text {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &__heading {
+            font-size: 60px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .how-it-works {
+        padding-bottom: 0;
+        .container {
+            padding: 0 110px;
+        }
+
+        .blocks {
+            gap: 94px;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+    }
+}
